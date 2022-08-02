@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+
+
+body,
+input[type="date"] {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, h1, h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+form {
+	background-color: #e4ecf1;
+	margin: 10px auto;
+	padding: 20px;
+	max-width: 700px;
+	border-radius: 8px;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="password"],
+label[for="radio-yes"],
+label[for="radio-no"],
+label[for="radio-maybe"] {
+	display: inline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+textarea,
+select {
+	background-color: #fff;
+	color: #444;
+	border: none;
+	border-radius: 4px;
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 3px solid rgba(26, 156, 188, 0.4);
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 49%;
+}
+
+select {
+	height: 35px;
+}
+
+span {
+	display: inline-block;
+	background-color: #1a9cbc;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	font-size: 0.8em;
+	margin-right: 5px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px 15px 15px 0px;
+}
+
+input[type="radio"] {
+	margin-bottom: 25px;
+	outline: none;
+}
+
+input[type="checkbox"] {
+	outline: none;
+}
+
+input[type="submit"] {
+	background-color: #1a9cbc;
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 7px;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+input[type="submit"]:hover {
+	background-color: #14829e;
+	cursor: pointer;
+}

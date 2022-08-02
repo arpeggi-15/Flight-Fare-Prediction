@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Flight Fare Prediction</title>
+</head>
+<body>
+    <div>
+        <h1>Flight Fare Prediction</h1>
+    </div>
+    <form action="\predict" method="post">
+        <!-- Details -->
+        <fieldset>
+          <legend><span>1</span> Your Details</legend>
+          <label for="name">
+            <input id="name" type="text" placeholder="Name" required autofocus>
+          </label>
+          <label for="email">
+            <input id="email" type="email" placeholder="Email" required>
+          </label>
+        </fieldset>
+        <!-- Destination & Departure -->
+        <fieldset>
+          <legend><span>2</span> Destination & Departure</legend>
+          <!-- date -->
+          <label for="departure">Departure Date:</label>
+          <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+          <label for="return">Arrival Date:</label>
+          <input id="Arrival_Time" type="datetime-local" name="Arrival_Time" required="required">
+          <!-- select -->
+          <label for="Source">Source:</label>
+          <select name="Source" id="Source" required="required">
+            <option value="Delhi">Delhi</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Chennai">Chennai</option>
+          </select>
+          <label for="Destination">Destination:</label>
+          <select name="Destination" id="Destination" required="required">
+            <option value="Cochin">Cochin</option>
+            <option value="Delhi">Delhi</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+          </select>
+        </fieldset>
+        <!-- Feedback -->
+        <fieldset>
+          <legend><span>3</span> Flight Details</legend>
+          <label for="airline">Name of Airline:</label>
+          <select name="airline" id="airline" required="required">
+            <option value="Jet Airways">Jet Airways</option>
+            <option value="IndiGo">IndiGo</option>
+            <option value="Air India">Air India</option>
+            <option value="Multiple carriers">Multiple carriers</option>
+            <option value="SpiceJet">SpiceJet</option>
+            <option value="Vistara">Vistara</option>
+            <option value="Air Asia">Air Asia</option>
+            <option value="GoAir">GoAir</option>
+            <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+            <option value="Jet Airways Business">Jet Airways Business</option>
+            <option value="Vistara Premium economy">Vistara Premium economy</option>
+            <option value="Trujet">Trujet</option>
+          </select>
+          <!-- radio -->
+          <label for="stops">Number of stops:</label>
+            <select name="stops" required="required">
+                <option value="0">Non-Stop</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </fieldset>
+        <!-- submit -->
+        <input type="submit" value="Predict">
+      </form>
+      <br>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+        <p>©2022 Priyanshu Kumar</p>
+</body>
+</html>
