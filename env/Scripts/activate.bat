@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\PRIYANSHU KUMAR\Desktop\Flight Fare Prediction\env
+set VIRTUAL_ENV=C:\Users\palav\Desktop\Flight-Fare-Prediction\env
 
 if not defined PROMPT set PROMPT=$P$G
 

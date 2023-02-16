@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\PRIYANSHU KUMAR\Desktop\Flight Fare Prediction\env"
+VIRTUAL_ENV="C:\Users\palav\Desktop\Flight-Fare-Prediction\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
