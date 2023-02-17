@@ -1,4 +1,4 @@
-# Flight Fare Prediction: 
+# Flight Fare Prediction✈️🎟️: 
 
 ## Table of Content
   * [Demo](#demo)
@@ -6,7 +6,7 @@
   * [Installation](#installation)
   * [Dataset Description](#dataset-description)
   * [Model Accuracy](#model-accuracy)
-  * [Future scope of project](#future-scope)
+  * [Future Scope](#future-scope)
   
   
  ## Demo
@@ -39,3 +39,7 @@ python app.py
 
 ##  Model Accuracy
 ![output](https://user-images.githubusercontent.com/70373142/219576808-ad775927-1faf-43a1-9fe4-2caf3beda1a3.png)
+
+## Future Scope
+* Use multiple Algorithms
+* Front-End
