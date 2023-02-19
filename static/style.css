@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
 body,
 input[type="date"] {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli',sans-serif;
+	font-size: 15px;
 }
 
 p, h1, h3{
@@ -28,6 +29,7 @@ legend {
 	font-size: 20px;
 	margin-bottom: 10px;
 	font-weight: bold;
+
 }
 
 label {
@@ -49,15 +51,23 @@ input[type="email"],
 input[type="datetime-local"],
 textarea,
 select {
-	background-color: #fff;
-	color: #444;
+
+	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+	background: #ecf0f3;
+	
+	color: gray;
 	border: none;
-	border-radius: 4px;
+	border-radius: 20px;
 	margin: 0;
 	padding: 10px;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 30px;
+
+}
+
+input::placeholder{
+	color: gray;
 }
 
 input:focus,
@@ -101,14 +111,93 @@ input[type="submit"] {
 	background-color: #1a9cbc;
 	color: #fff;
 	padding: 15px 25px;
-	border-radius: 7px;
+	border-radius: 25px;
 	font-size: 18px;
 	text-align: center;
 	width: 100%;
 	margin-bottom: 25px;
+
 }
 
 input[type="submit"]:hover {
 	background-color: #14829e;
 	cursor: pointer;
 }
+
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #ecf0f3;
+	font-family: 'Muli',sans-serif;
+
+}
+
+
+.parent{
+	margin-top: 25px;
+	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+	border-radius: 10px;
+	max-width: max-content;
+	height: 893.22px;
+
+}
+
+
+.predict-button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.predict-button:hover {
+	background-color: #45a049;
+}
+
+
+.predict-button:hover {
+	transform: scale(1.05);
+	background-color: #1c8adb;
+	color: #fff;
+	box-shadow: 0px 0px 10px #1c8adb;
+}
+
+.footer {
+	background-color: #1c8adb;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	bottom: 0;
+	width: 100%;
+	border-radius: 10px;
+	position: sticky;
+}
+.header {
+	background-color: #1c8adb;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	border-radius: 20px;
+}
+
+.prediction_text{
+	background-color: #1c8adb;
+	padding: 15px;
+	width: 28%;
+	border-radius: 10px;
+	box-shadow: 14px 14px 20px #0c3864, -14px -14px 20px white;
+
+}
+.prediction_text p{
+	margin-top: -5px;
+	font-size: 14px;
+}
+
