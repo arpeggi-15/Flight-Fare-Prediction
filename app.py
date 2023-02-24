@@ -309,19 +309,18 @@ def predict():
         #     d_Kolkata
         # )
         
-
-    #     ['Total_Stops', 'Journey_day', 'Journey_month', 'Dep_hour',
-    #    'Dep_min', 'Arrival_hour', 'Arrival_min', 'Duration_hours',
-    #    'Duration_mins', 'Airline_Air India', 'Airline_GoAir', 'Airline_IndiGo',
-    #    'Airline_Jet Airways', 'Airline_Jet Airways Business',
-    #    'Airline_Multiple carriers',
-    #    'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
-    #    'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy',
-    #    'Source_Chennai', 'Source_Delhi', 'Source_Kolkata', 'Source_Mumbai',
-    #    'Destination_Cochin', 'Destination_Delhi', 'Destination_Hyderabad',
-    #    'Destination_Kolkata', 'Destination_New Delhi']
+        column_names  = ['Total_Stops', 'Journey_day', 'Journey_month', 'Dep_hour',
+        'Dep_min', 'Arrival_hour', 'Arrival_min', 'Duration_hours',
+        'Duration_mins', 'Airline_Air India', 'Airline_GoAir', 'Airline_IndiGo',
+        'Airline_Jet Airways', 'Airline_Jet Airways Business',
+        'Airline_Multiple carriers',
+        'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
+        'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy',
+        'Source_Chennai', 'Source_Delhi', 'Source_Kolkata', 'Source_Mumbai',
+        'Destination_Cochin', 'Destination_Delhi', 'Destination_Hyderabad',
+        'Destination_Kolkata', 'Destination_New Delhi']
         
-        prediction=model.predict([[
+        user_data = [
             Total_stops,
             Journey_day,
             Journey_month,
@@ -351,9 +350,14 @@ def predict():
             d_Hyderabad,
             d_Kolkata,
             d_New_Delhi
-        ]])
+        ]
 
-        output=round(prediction[0],2)
+        # create a dataframe from user data
+        new_data = pd.DataFrame([user_data], columns = column_names)
+        # get the predicted price from the trained model
+        prediction = model.predict(new_data)
+        # predicted result
+        output = round(prediction[0], 2)
 
         return render_template('index.html',prediction_text="Your Flight price is Rs. {}".format(output))
 
