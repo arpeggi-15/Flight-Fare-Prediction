@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="/Flight-Fare-Prediction/static/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
     <title>Flight Fare Prediction</title>
 </head>
 <body>
-    <div>
+    <div class="header">
         <h1>Flight Fare Prediction</h1>
     </div>
-    <form action="\predict" method="post">
+    <div class="parent">
+      <form action="\predict" method="post">
         <!-- Details -->
         <fieldset>
-          <legend><span>1</span> Your Details</legend>
+          <legend><span>1</span> YOUR DETAILS</legend>
           <label for="name">
             <input id="name" type="text" placeholder="Name" required autofocus>
           </label>
@@ -24,21 +27,21 @@
         </fieldset>
         <!-- Destination & Departure -->
         <fieldset>
-          <legend><span>2</span> Destination & Departure</legend>
+          <legend><span>2</span> DESTINATION AND DEPARTURE</legend>
           <!-- date -->
-          <label for="departure">Departure Date:</label>
+          <label for="departure">DEPARTURE DATE:</label>
           <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
-          <label for="return">Arrival Date:</label>
+          <label for="return">ARRIVAL DATE:</label>
           <input id="Arrival_Time" type="datetime-local" name="Arrival_Time" required="required">
           <!-- select -->
-          <label for="Source">Source:</label>
+          <label for="Source">SOURCE:</label>
           <select name="Source" id="Source" required="required">
             <option value="Delhi">Delhi</option>
             <option value="Kolkata">Kolkata</option>
             <option value="Mumbai">Mumbai</option>
             <option value="Chennai">Chennai</option>
           </select>
-          <label for="Destination">Destination:</label>
+          <label for="Destination">DESTINATION:</label>
           <select name="Destination" id="Destination" required="required">
             <option value="Cochin">Cochin</option>
             <option value="Delhi">Delhi</option>
@@ -49,8 +52,8 @@
         </fieldset>
         <!-- Feedback -->
         <fieldset>
-          <legend><span>3</span> Flight Details</legend>
-          <label for="airline">Name of Airline:</label>
+          <legend><span>3</span> FLGHT DETAILS</legend>
+          <label for="airline">NAME OF AIRLINES:</label>
           <select name="airline" id="airline" required="required">
             <option value="Jet Airways">Jet Airways</option>
             <option value="IndiGo">IndiGo</option>
@@ -66,7 +69,7 @@
             <option value="Trujet">Trujet</option>
           </select>
           <!-- radio -->
-          <label for="stops">Number of stops:</label>
+          <label for="stops">NUMBER OF STOPS:</label>
             <select name="stops" required="required">
                 <option value="0">Non-Stop</option>
                 <option value="1">1</option>
@@ -76,14 +79,21 @@
             </select>
         </fieldset>
         <!-- submit -->
-        <input type="submit" value="Predict">
+        <input type="submit" value="PREDICT" class="predict-button">
       </form>
+    </div>
       <br>
         <br>
-        <h3>{{ prediction_text }}</h3>
+        <h3 class="prediction_text">
+          <p>Prediction for given inputs</p>
+        </h3>
 
         <br>
         <br>
-        <p>©2022 Priyanshu Kumar</p>
+    <div class="footer">
+      <p>©2023 Priyanshu Kumar</p>
+    </div>
+        
+    
 </body>
 </html>
