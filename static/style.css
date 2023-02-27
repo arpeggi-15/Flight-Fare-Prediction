@@ -3,8 +3,8 @@
 
 body,
 input[type="date"] {
-	font-family: 'Muli',sans-serif;
-	font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px;
 }
 
 p, h1, h3{
@@ -14,11 +14,11 @@ p, h1, h3{
 
 
 form {
-	background-color: #e4ecf1;
-	margin: 10px auto;
-	padding: 20px;
-	max-width: 700px;
-	border-radius: 8px;
+	background-color: #df5fae;
+	margin: 14px auto;
+	padding: 25px;
+	max-width: 720px;
+	border-radius: 10px;
 }
 
 fieldset {
@@ -52,10 +52,9 @@ input[type="datetime-local"],
 textarea,
 select {
 
-	box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-	background: #ecf0f3;
+	box-shadow: inset 6px 6px 6px #42bec4, inset 6px 6px 6px #42bec4;
 	
-	color: gray;
+	color: rgb(132, 217, 232);
 	border: none;
 	border-radius: 20px;
 	margin: 0;
@@ -109,7 +108,7 @@ input[type="checkbox"] {
 
 input[type="submit"] {
 	background-color: #1a9cbc;
-	color: #fff;
+	color: #99deeb;
 	padding: 15px 25px;
 	border-radius: 25px;
 	font-size: 18px;
@@ -120,7 +119,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: #14829e;
+	background-color: #7fdee9;
 	cursor: pointer;
 }
 
@@ -130,7 +129,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #ecf0f3;
+	background: #86dff3;
 	font-family: 'Muli',sans-serif;
 
 }
@@ -138,7 +137,7 @@ body{
 
 .parent{
 	margin-top: 25px;
-	box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+	box-shadow: 14px 14px 20px #73e1e2, -14px -14px 20px rgb(91, 203, 205);
 	border-radius: 10px;
 	max-width: max-content;
 	height: 893.22px;
@@ -148,7 +147,7 @@ body{
 
 .predict-button {
 	background-color: #4CAF50;
-	color: white;
+	color: rgb(178, 235, 22);
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
