@@ -161,13 +161,13 @@ body{
 
 .predict-button:hover {
 	transform: scale(1.05);
-	background-color: #1c8adb;
+	background-color: #2511e0;
 	color: #fff;
-	box-shadow: 0px 0px 10px #1c8adb;
+	box-shadow: 0px 0px 10px #4804db;
 }
 
 .footer {
-	background-color: #1c8adb;
+	background-color: #1e0dda;
 	color: white;
 	text-align: center;
 	padding: 10px 0;
@@ -177,7 +177,7 @@ body{
 	position: sticky;
 }
 .header {
-	background-color: #1c8adb;
+	background-color: #2f06d0;
 	color: white;
 	text-align: center;
 	padding: 10px 0;
@@ -188,11 +188,11 @@ body{
 }
 
 .prediction_text{
-	background-color: #1c8adb;
+	background-color: #0c1ccf;
 	padding: 15px;
 	width: 28%;
 	border-radius: 10px;
-	box-shadow: 14px 14px 20px #0c3864, -14px -14px 20px white;
+	box-shadow: 14px 14px 20px #97b1cb, -14px -14px 20px white;
 
 }
 .prediction_text p{
